@@ -1,1 +1,170 @@
-http://dash.ga.co/Akshayp/build-your-own-business-website
+<!DOCTYPE html>
+
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Jim+Nightshade" rel="stylesheet">
+<style>
+
+body {
+  background: url("http://wallpapercave.com/wp/rUSFi40.jpg");
+  background-size: auto;
+  background-position: center;
+  font-family: 'Baloo Bhaina', cursive;
+  margin: 0 auto;
+  max-width: 600px; 
+  text-align: center;
+
+} 
+div {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 20px;
+}
+ 
+h1 {
+ font-family: 'Jim Nightshade', cursive;
+  text-align: center;
+  font-size: 80px;
+  color: rgba(245,121,102,102);
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center; 
+  color: rgba(245,121,102,102);  
+  margin: 0px 0 70px 0;
+}
+marquee {
+ text-align: center;
+}
+input {
+  border: 5px;
+    border-radius: 20px;
+    padding: 10px 0px 10px 10px;
+    font-size: 15px;
+  }
+small {
+  opacity: 0;
+}
+.price {
+  float: right;
+}
+
+button {
+  opacity: 0;
+  background: red;
+  color: white;
+  border: red;
+  margin: 5px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
+}
+  .show-description p {
+    height: 150px;
+  }
+  .show-description small {
+    opacity: 1;
+  }
+  .show-description button {
+    opacity: 1;
+  }
+      p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  height: 30px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+   -moz-transition:height .5s;
+}
+
+.first {
+  background-image: url("https://smhttp-ssl-33667.nexcesscdn.net/manual/wp-content/uploads/2014/11/shirt-feat-1-1170x598.jpg");
+}
+.second {
+  background-image: url("http://www.denimblog.com/wp-content/uploads/2011/06/collage-3.jpg");
+}
+.dessert {
+  background-image: url("http://www.mensfashionmagazine.com/wp-content/uploads/2013/12/feature-image-accessories.jpg");
+}
+.fourth {
+  background-image: url("http://images.askmen.com/1080x540/grooming/appearance/multipurpose-grooming-products-for-men-1107115-TwoByOne.jpg");
+}
+
+@media (max-width:500px) { 
+h1 {
+  color: rgba(245,121,102,102);
+  font-size: 40px;
+  margin-top: 20px;
+  line-height: 40px;
+}
+h2 {
+  font-size: 15px;
+  margin: 20px 0 30px 0;
+  }
+  input {
+    margin: 0px 0px 30px 0px;;
+    }
+  div {
+    margin: 0px 10px 20px 10px;
+  background-size: cover;
+     } 
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      }  
+  small {
+    font-size: 16px;
+   }
+  }
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Allamoda Wardrobe</h1>
+<h2><marquee direction="up">The online-fashion hub!</marquee></h2>
+<input type="Search" placeholder="Search">
+<div class="first">
+  <p> Casual Shirts<span class="price">$30</span><br />
+  <small> Adding a touch of uniqueness to some coloured casual shirts from the house of biggest brands. The cotton fabric of these shirta for men offer a comfortable and flattering fit. </small> <br />
+ <button>View</button> </p>
+</div>
+
+<div class="second">
+  <p>Pair of Denims <span class="price">$40 </span><br />
+  <small> Presentiing jeans that showcase clean cuts and a whisker effect, giving them both a cool and stylish feel. These jeans are tailored from cotton stretch fabric, making them lightweight and comfortable. </small><br />
+  <button>View</button></p>
+</div>
+  
+<div class="dessert">
+  <p>Accessories <span class="price">$45</span><br />
+  <small> A perfect blend of style and utility. These watch, belts and sunglasses will serve you for years to come, courtesy its leather strap and stainless steel. Strap on this with casual or formal attire to fetch complimenting glances! </small><br />
+  <button>View</button></p>
+</div>
+
+<div class="fourth">
+<p>Personal Grooming <span class="price">$20</span><br />  
+<small> Move on from the scruffy, the clean cut and get creative with your facial hair. Containing natural extracts of amla, this hair conditioner from Forest Essentials makes for an essential addition to your hair care routine. </small><br />
+<button>View</button></p>
+</div>
+
+<script> 
+$('div').on('click', function() { 
+  $(this).toggleClass('show-description');
+});
+</script>
+<script> $("button").on("click",function(){ alert("viewed!") }) </script>
+  <script> alert("Welcome to the world of Fashion!") </script>
+</body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-<script src="/assets/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Jim+Nightshade" rel="stylesheet">
 <style>
 
@@ -19,7 +19,7 @@ div {
   height: 300px;
   background-size: cover;
   position: relative;
-  margin: 40px 0 0 0;
+  margin: 40px 0px 0px 0px;
   border-radius: 20px;
 }
  
@@ -28,12 +28,12 @@ h1 {
   text-align: center;
   font-size: 80px;
   color: rgba(245,121,102,102);
-  margin: 60px 0 0 0;
+  margin: 60px 0px 0px 0px;
 }
 h2 {
   text-align: center; 
   color: rgba(245,121,102,102);  
-  margin: 0px 0 70px 0;
+  margin: 0px 0px 70px 0px;
 }
 marquee {
  text-align: center;
@@ -109,7 +109,7 @@ h1 {
 }
 h2 {
   font-size: 15px;
-  margin: 20px 0 30px 0;
+  margin: 20px 0px 30px 0px;
   }
   input {
     margin: 0px 0px 30px 0px;;
@@ -160,10 +160,13 @@ h2 {
 </div>
 
 <script> 
+$(document).ready(function(){
 $('div').on('click', function() { 
   $(this).toggleClass('show-description');
-});
+  });
 </script>
-<script> $("button").on("click",function(){ alert("viewed!") }) </script>
-  <script> alert("Welcome to the world of Fashion!") </script>
+<script> $("button").on("click",function(){ alert("viewed!") }) 
+</script>
+  <script> alert("Welcome to the world of Fashion!") 
+  </script>
 </body>
